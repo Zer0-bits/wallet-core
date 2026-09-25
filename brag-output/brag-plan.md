@@ -1,36 +1,38 @@
-# /brag plan: SPARE (Spare Portal L.L.C.)
+# /brag plan v2: SPARE (Spare Portal L.L.C.)
 
-**Input:** the brand guidelines (v15, Edition 02 · 2026) and the final print files. The visuals come from these files: the logo lockups and app screens were extracted from the guideline PDF, the pattern geometry was lifted as vectors from p.30, and the print pieces were rendered from `1-print-from-these-outlined/` at trim size.
+## Why v1 was rebuilt
+The first cut failed on four counts:
+- **Floating logo:** the lockup sat in the middle of the frame, which breaks p.25 ("anchored, never floating").
+- **Brand rules broken:** the social grid on p.49 was ignored, the Verified sticker was rotated, the condition chips were invented (p.29 says reuse the existing badges), and the pattern ran behind copy (p.30).
+- **No photography,** although p.41–42 set out how parts are filmed.
+- **Music:** a thin synthesized loop.
 
-## Answers
-- **What is it:** a UAE marketplace for car spare parts, new and used, where buyers can search by photographing the part.
-- **Who is it for:** car owners, DIY repairers and garages who need a part today, plus the parts businesses and private sellers on the other side.
-- **What sets it apart:** you point the camera at the part, condition is stated on every listing, vendors are reviewed by the team, and New, Used and Auction sit side by side.
-- **Strongest claim (the brand's own words):** "Point the camera at the part."
-- **Visual hook:** the tessellated mark building across the screen, then a real phone doing a photo search.
-- **Real UI shown:** the three shipping screens from p.14 (home, camera, results) and the three store screens from p.44.
-- **Tone:** `polished`. p.42 asks for video that is "Crisp, calm, informative… smooth transitions… without being frantic."
-- **Share caption:** "Point the camera at the part. Spare finds it: new, used or at auction, from vendors our team has reviewed."
+## Rules this cut is built on
+- **Every content scene** is a landscape version of the p.49 social template:
+  - horizontal lockup top-left
+  - category tag top-right
+  - two-tone headline (white, then amber) with a Cairo line under it
+  - call-to-action button bottom-left, URL bottom-right
+- **Headlines, lines and buttons** are the book's own copy: the p.49 posts, p.14, p.16, p.20 and the tagline on p.2.
+- **Photo layout (p.49):** dark image with a navy gradient at the foot. The photographs come from the guidelines, shot to p.41–42, and move with a slow push as p.42 asks.
+- **Amber layout (p.49):** flat brand colour with the pattern at 7%. The mark is the approved on-amber version from p.25 ("Primary": off-white and navy), so amber never sits on amber.
+- **Logos:** the supplied files, unaltered and anchored at the margin. Intro and outro use the cover composition (p.1): stacked bilingual lockup at the left margin, an amber rule at the top edge, the tagline set right. That keeps the intro and outro consistent, as p.42 requires.
+- **Pattern:** full strength only in the diagonal splash wipes (splash and banner use, p.30). Otherwise it runs at 6–7%, masked away from the copy, and is never rotated or stretched.
+- **Teal:** only on the Spare Verified tag and sticker.
+- **Type:** Tajawal for headlines, tags and buttons. Cairo for the lines under headlines and the URL.
 
-## Brand rules enforced in the build
-- Colours: Navy `#1B2731` is the ground, Amber `#FFA500` is the accent and signal, and white is used for type on navy. Teal `#00BFA6` appears **only** on the Spare Verified sticker. Off-white `#E6E7E8` appears only in the full-strength pattern. Ink `#0E161D` is not used, because it is reserved for the cover and dividers. No coral or mint.
-- Type: Tajawal (Bold/Medium) for headlines and names, Cairo for detail, as p.31–32 and p.42 require. Line-height is at least the font size.
-- Logo: the supplied artwork is used unaltered and never redrawn, recoloured, rotated or given effects. The dark-ground variant is used on navy. The mark is scaled uniformly only and keeps its clear space of X on every side. The avatar is never enlarged.
-- Pattern: full strength only in the intro. Behind content it runs at 7% tone-on-tone and is never rotated or stretched. Its tile height is about 120 px, inside the 96–140 px on-screen range.
-- Voice: only the book's own copy. No delivery-speed promise and no invented numbers. The intro and outro are consistent, as p.42 requires.
-- Amber on navy passes WCAG AA. Amber is never used as small type on white.
-
-## Storyboard (landscape 1920×1080, 30 fps, 21.0 s)
-| # | Time | Scene | On-screen text |
-|---|---|---|---|
-| 1 | 0.0–3.0 | **Intro (splash).** Full-strength tessellation builds across the navy ground, tile by tile. It settles, then fades back to 7%, and the bilingual stacked lockup (dark) lands in the centre. | none (lockup only) |
-| 2 | 3.0–7.6 | **Hook, then product.** Headline on the left. On the right, a phone showing the home screen. An amber ring pulses on the camera glyph with a soft tap, and the screen swaps to the camera screen. | "Point the camera **at the part.**" / Cairo: "Shoot it, or choose from the library." |
-| 3 | 7.6–11.4 | **Result.** The phone swaps to similar-parts results with a slow push. The headline changes. | "Similar parts, **filterable by vehicle.**" / Cairo: "Also: search by car · search by part number" |
-| 4 | 11.4–14.8 | **Trust.** The Spare Verified sticker from the print file rolls in. Condition chips appear one by one. | "Every vendor is checked **before they can list.**" / chips: New · Nearly new · Used |
-| 5 | 14.8–17.6 | **Beyond the app.** The print collateral glides past in parallax on navy: box, shopping bag, ID card, business card, van, tape. | "Beyond just **a marketplace**" |
-| 6 | 17.6–21.0 | **Outro.** The same lockup as the intro, with the tagline and the URL. An amber band seals the foot, as it does on every print piece. | "Your Ultimate Destination for Car Spare Parts." / "SPAREUAE.COM" |
-
-Every line holds for at least 0.3 s per word once it has settled. Transitions are staggered, with the old content out before the new comes in, so there are no crossfades between busy layouts.
+## Storyboard (1920×1080, 30 fps, 25.6 s, cuts on the track's beat grid)
+| Time | Scene | Tag | Headline / line | Call to action |
+|---|---|---|---|---|
+| 0.00–1.64 | Cover intro: lockup at the left margin, amber rule, then a pattern wipe | none | none | none |
+| 1.64–4.91 | Turbo photograph (p.42), slow push | SEARCH BY PHOTO | **Search it. / Photograph it.** / Point the camera at the part. | Try the camera |
+| 4.91–9.29 | The real app, with push navigation: home, tap camera, camera screen, tap Open camera, shutter, results | SEARCH BY PHOTO | **Shoot it, or choose / from the library.**, then **Similar parts, / filterable by vehicle.** | Try the camera |
+| 9.29–13.11 | Pattern wipe into a part-photo montage (engine bay, spark plugs, shock, block), one cut every 2 beats | NEW PARTS | **Every part. / One platform.** / Reviewed vendors, secure card payment, condition stated on every listing. | Shop now |
+| 13.11–16.38 | The printed Verified sticker, photographed | SPARE VERIFIED (teal) | **Every vendor is checked / before they can list.** / Condition stated on every listing, new, nearly new or used. | Shop now |
+| 16.38–19.10 | Amber layout, with the app's Sell step 1 | SELL USED | **Got a part / gathering dust?** / List a part in three steps. | Start selling |
+| 19.10–22.37 | Print files in use: van, tape and box, fascia sign | DUBAI · UAE | **Beyond just / a marketplace** / A UAE business, built for the UAE market. | Download now |
+| 22.37–25.60 | Pattern wipe into the cover outro | none | Your Ultimate Destination for Car Spare Parts. · www.spareuae.com | none |
 
 ## Sound
-The track is original and synthesized: a calm, warm pulse at 96 BPM in D major, with a soft pad, a muted pluck arpeggio and a light kick from scene 2. The sound effects are in the same key and the same reverb space and sit under the music: soft airy swells on transitions, a muted tap on the camera glyph, a gentle "confirm" chime on the verified sticker, and a final resolve on the outro.
+- **Music:** "Happy Beats / Business Moves Vol. 12" (ende.app), bundled with /brag, at 110 BPM. It opens quietly and lifts at 8.7 s into the parts montage, and it fades out over the outro.
+- **Effects:** recorded Kenney effects (CC0), mixed under the music with light ducking: soft impacts on the wipes and cuts, taps on the app, and a bell on Verified and on the outro.
